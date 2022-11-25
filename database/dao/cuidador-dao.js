@@ -25,7 +25,7 @@ async function buscaTodosDados() {
 async function buscaDados(codigoCuidador) {
   return await Cuidador.findAll({
     where: {
-      cidade: cidadeCuidador,
+      cidade: codigoCuidador,
     },
   });
 }
